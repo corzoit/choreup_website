@@ -613,7 +613,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--spacing-md);
+    padding: var(--spacing-xl);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease;
@@ -628,11 +628,13 @@ a:hover {
 .screenshot-lightbox-inner {
     background: white;
     border-radius: var(--radius-lg);
-    max-width: 520px;
-    width: min(90vw, 520px);
+    max-width: 400px;
+    width: min(75vw, 400px);
+    max-height: 80vh;
     padding: var(--spacing-md);
     position: relative;
     box-shadow: var(--shadow-xl, 0 25px 60px rgba(15, 23, 42, 0.2));
+    overflow: auto;
 }
 
 .screenshot-lightbox-inner img {
@@ -646,7 +648,24 @@ a:hover {
     margin-top: var(--spacing-sm);
     text-align: center;
     color: var(--color-text-muted);
-    font-size: 0.95rem;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 480px) {
+    .screenshot-lightbox {
+        padding: var(--spacing-lg);
+    }
+
+    .screenshot-lightbox-inner {
+        max-width: 280px;
+        width: 70vw;
+        max-height: 70vh;
+        padding: var(--spacing-sm);
+    }
+
+    .screenshot-lightbox-caption {
+        font-size: 0.8rem;
+    }
 }
 
 
