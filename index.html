@@ -227,20 +227,19 @@
                 </div>
                 <div class="screenshots-carousel">
                     <div class="screenshot-item">
-                        <div class="screenshot-placeholder">Dashboard</div>
-                        <p class="screenshot-caption">See all your children's progress at a glance</p>
+                        <img src="images/previews/01-dashboard.png" alt="ChoreUp Dashboard - See your whole family's progress">
                     </div>
                     <div class="screenshot-item">
-                        <div class="screenshot-placeholder">Chores</div>
-                        <p class="screenshot-caption">Kids know exactly what to do and what they'll earn</p>
+                        <img src="images/previews/02-chores.png" alt="ChoreUp Chores - Daily, weekly, or custom schedules">
                     </div>
                     <div class="screenshot-item">
-                        <div class="screenshot-placeholder">Rewards</div>
-                        <p class="screenshot-caption">Set up rewards that actually motivate your kids</p>
+                        <img src="images/previews/03-rewards.png" alt="ChoreUp Rewards - Screen time, treats, toys">
                     </div>
                     <div class="screenshot-item">
-                        <div class="screenshot-placeholder">Goals <span class="badge-pro">Pro</span></div>
-                        <p class="screenshot-caption">Track long-term achievements (Pro)</p>
+                        <img src="images/previews/04-goals.png" alt="ChoreUp Goals - Long-term achievements">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="images/previews/05-childs-view.png" alt="ChoreUp Child View - Kids check in and mark chores done">
                     </div>
                 </div>
             </div>
@@ -360,6 +359,13 @@
         </div>
     </footer>
 
+    <div class="screenshot-lightbox" id="screenshot-lightbox" aria-hidden="true">
+        <div class="screenshot-lightbox-inner" role="dialog" aria-modal="true" aria-label="Screenshot preview" tabindex="-1">
+            <img src="" alt="" id="screenshot-lightbox-img">
+            <p class="screenshot-lightbox-caption" id="screenshot-lightbox-caption"></p>
+        </div>
+    </div>
+
     <!-- FAQ Accordion Script -->
     <script>
         document.querySelectorAll('.faq-question').forEach(button => {
@@ -376,6 +382,56 @@
                 }
             });
         });
+
+        const screenshots = document.querySelectorAll('.screenshot-item img');
+        const lightbox = document.getElementById('screenshot-lightbox');
+        const lightboxInner = document.querySelector('.screenshot-lightbox-inner');
+        const lightboxImg = document.getElementById('screenshot-lightbox-img');
+        const lightboxCaption = document.getElementById('screenshot-lightbox-caption');
+        let lastFocusedElement = null;
+
+        const closeLightbox = () => {
+            if (!lightbox) return;
+            lightbox.classList.remove('active');
+            lightbox.setAttribute('aria-hidden', 'true');
+            lightboxImg.src = '';
+            lightboxImg.alt = '';
+            lightboxCaption.textContent = '';
+            document.body.style.overflow = '';
+            if (lastFocusedElement) {
+                lastFocusedElement.focus();
+                lastFocusedElement = null;
+            }
+        };
+
+        if (screenshots.length && lightbox && lightboxInner && lightboxImg && lightboxCaption) {
+            const openLightbox = (img) => {
+                lastFocusedElement = document.activeElement;
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightboxCaption.textContent = img.alt;
+                lightbox.classList.add('active');
+                lightbox.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+                lightboxInner.focus();
+            };
+
+            screenshots.forEach(img => {
+                img.addEventListener('click', () => openLightbox(img));
+            });
+
+            lightbox.addEventListener('click', (event) => {
+                if (event.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && lightbox.classList.contains('active')) {
+                    closeLightbox();
+                }
+            });
+        }
     </script>
 </body>
 </html>

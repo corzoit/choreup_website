@@ -574,27 +574,81 @@ a:hover {
     text-align: center;
 }
 
-.screenshot-item img,
-.screenshot-placeholder {
-    width: 240px;
-    height: 480px;
-    border-radius: var(--radius-lg);
+.screenshot-item img {
+    height: 500px;
+    width: auto;
+    border-radius: var(--radius-md);
     box-shadow: var(--shadow-lg);
-    background: var(--color-surface);
+    cursor: zoom-in;
+}
+
+@media (max-width: 480px) {
+    .screenshot-item img {
+        height: 460px;
+    }
+}
+
+@media (min-width: 900px) {
+    .screenshots-carousel {
+        justify-content: center;
+        overflow-x: visible;
+        scroll-snap-type: none;
+        -webkit-overflow-scrolling: auto;
+        flex-wrap: wrap;
+    }
+
+    .screenshot-item {
+        flex: 0 0 auto;
+    }
+
+    .screenshot-item img {
+        height: 420px;
+    }
+}
+
+.screenshot-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-text-muted);
-    font-size: 0.875rem;
-    border: 1px solid var(--color-border);
+    padding: var(--spacing-md);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 200;
 }
 
-.screenshot-caption {
-    margin-top: var(--spacing-sm);
-    color: var(--color-text-muted);
-    font-size: 0.875rem;
-    max-width: 240px;
+.screenshot-lightbox.active {
+    opacity: 1;
+    pointer-events: auto;
 }
+
+.screenshot-lightbox-inner {
+    background: white;
+    border-radius: var(--radius-lg);
+    max-width: 520px;
+    width: min(90vw, 520px);
+    padding: var(--spacing-md);
+    position: relative;
+    box-shadow: var(--shadow-xl, 0 25px 60px rgba(15, 23, 42, 0.2));
+}
+
+.screenshot-lightbox-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: none;
+}
+
+.screenshot-lightbox-caption {
+    margin-top: var(--spacing-sm);
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
 
 .badge-pro {
     display: inline-block;
@@ -949,5 +1003,9 @@ a:hover {
 
     .screenshots-carousel {
         padding-left: var(--spacing-md);
+    }
+
+    .screenshot-item img {
+        height: 400px;
     }
 }
