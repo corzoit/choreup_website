@@ -1,0 +1,6 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" rx="40" fill="#34C759"/>
+  <text x="90" y="105" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="72" font-weight="700" fill="white">C</text>
+  <circle cx="135" cy="45" r="20" fill="#F5A623"/>
+  <polygon points="135,32 138,42 148,42 140,48 143,58 135,52 127,58 130,48 122,42 132,42" fill="white"/>
+</svg>

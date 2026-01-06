@@ -3,262 +3,366 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChoreUp for Families - Make Chores Fun</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>ChoreUp - Kids Do Chores Without the Daily Nagging</title>
+    <meta name="description" content="Kids earn Star Coins for completing chores and redeem them for rewards you choose. No accounts, works offline, free to start. Best for ages 4-14.">
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: linear-gradient(135deg, #F7F6F3 0%, #E8E6E1 100%);
-            min-height: 100vh;
-            color: #1a1a1a;
-        }
+    <!-- Open Graph -->
+    <meta property="og:title" content="ChoreUp - Chores Without the Nagging">
+    <meta property="og:description" content="Kids earn Star Coins for tasks, you approve, they redeem rewards. Simple system that builds independence.">
+    <meta property="og:image" content="https://getchoreup.com/images/og-image.png">
+    <meta property="og:url" content="https://getchoreup.com">
+    <meta property="og:type" content="website">
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ChoreUp - Chores Without the Nagging">
+    <meta name="twitter:description" content="Kids earn Star Coins for tasks, you approve, they redeem rewards. Simple system that builds independence.">
 
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-        }
+    <!-- Canonical -->
+    <link rel="canonical" href="https://getchoreup.com">
 
-        .app-icon {
-            width: 120px;
-            height: 120px;
-            border-radius: 24px;
-            margin-bottom: 24px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-        }
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/app-icon.svg">
 
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 12px;
-            color: #1a1a1a;
-        }
-
-        .tagline {
-            font-size: 1.25rem;
-            color: #666;
-            margin-bottom: 32px;
-        }
-
-        .app-store-badge {
-            height: 54px;
-            transition: transform 0.2s;
-        }
-
-        .app-store-badge:hover {
-            transform: scale(1.05);
-        }
-
-        .features {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            margin: 40px 0;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        }
-
-        .features h2 {
-            text-align: center;
-            margin-bottom: 32px;
-            color: #1a1a1a;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 24px;
-        }
-
-        .feature {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 12px;
-        }
-
-        .feature h3 {
-            font-size: 1.1rem;
-            margin-bottom: 8px;
-            color: #1a1a1a;
-        }
-
-        .feature p {
-            font-size: 0.95rem;
-            color: #666;
-            line-height: 1.5;
-        }
-
-        .section {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            margin: 40px 0;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        }
-
-        .section h2 {
-            margin-bottom: 20px;
-            color: #1a1a1a;
-        }
-
-        .section p, .section li {
-            color: #444;
-            line-height: 1.7;
-            margin-bottom: 12px;
-        }
-
-        .section ul {
-            padding-left: 24px;
-        }
-
-        .support {
-            text-align: center;
-        }
-
-        .support a {
-            color: #007AFF;
-            text-decoration: none;
-        }
-
-        .support a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: #888;
-            font-size: 0.9rem;
-        }
-
-        footer a {
-            color: #666;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .features, .section {
-                padding: 24px;
-            }
-        }
-    </style>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <section class="hero">
-            <img src="app-icon.png" alt="ChoreUp App Icon" class="app-icon" onerror="this.style.display='none'">
-            <h1>ChoreUp for Families</h1>
-            <p class="tagline">Turn chores into a fun rewards game for kids</p>
-            <a href="https://apps.apple.com/app/choreup-for-families/id0000000000">
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="images/app-icon.svg" alt="ChoreUp" width="40" height="40" style="border-radius: 10px;">
+                <span>ChoreUp</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero section-cream">
+        <div class="container">
+            <div class="hero-content">
+                <img src="images/app-icon.svg" alt="ChoreUp App Icon" class="hero-icon" width="80" height="80" style="border-radius: 18px;">
+                <h1>Chores, Without the Daily Nagging</h1>
+                <p class="hero-subtitle">
+                    Kids earn Star Coins for tasks you choose. You approve their work.
+                    They redeem rewards you set. Simple system, calmer home.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://apps.apple.com/us/app/choreup-for-families/id6757204140?utm_source=website&utm_medium=hero" target="_blank" rel="noopener">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                             alt="Download on the App Store"
+                             class="app-store-badge">
+                    </a>
+                    <p class="hero-meta">Free to start &bull; No account required &bull; Best for ages 4-14</p>
+                </div>
+            </div>
+            <div class="hero-mockup">
+                <img src="images/hero-mockup.svg" alt="ChoreUp app showing a child's chore list" class="hero-mockup-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="section section-white problem-section">
+        <div class="container-narrow">
+            <span class="label">Sound Familiar?</span>
+            <div class="problem-quotes">
+                <span>"Clean your room."</span>
+                <span>"Did you feed the dog?"</span>
+                <span>"How many times do I have to ask?"</span>
+            </div>
+            <p class="problem-body">
+                You're not alone. Getting kids to help around the house can feel
+                like an endless battle of reminders and arguments.
+            </p>
+            <p class="problem-body">
+                ChoreUp turns chores into an earning opportunity kids understand.
+                The same motivation loops they already enjoy—redirected into
+                building real-life habits and independence.
+            </p>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section section-cream">
+        <div class="container">
+            <div class="how-it-works-header">
+                <h2>Simple for Parents. Fun for Kids.</h2>
+                <p class="how-it-works-subtitle">Set up in under 2 minutes</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <div class="step-icon">📋</div>
+                    <h3>Create Chores</h3>
+                    <p>Add tasks with point values. Set daily, weekly, or weekend schedules. Optionally require photo proof of completion.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <div class="step-icon">⭐</div>
+                    <h3>Kids Earn Star Coins</h3>
+                    <p>Children mark chores done and watch their balance grow. You review and approve before points are awarded.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <div class="step-icon">🎁</div>
+                    <h3>Redeem Rewards</h3>
+                    <p>Kids save up and "buy" rewards you define. Screen time, treats, activities, toys—whatever motivates your family.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="features-header">
+                <h2>Everything You Need to Get Started</h2>
+                <p class="features-subtitle">All included free</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Multiple Children</h3>
+                    <p>Every kid gets their own chores, points balance, and rewards. Works for families of any size.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>Daily & Weekly Schedules</h3>
+                    <p>Set chores for every day, weekdays only, weekends only, or specific days of the week.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3>Photo Proof</h3>
+                    <p>Require kids to snap a photo before marking chores complete. Review the evidence before approving points.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✓</div>
+                    <h3>Approval Control</h3>
+                    <p>Review and approve completed chores before points are awarded. Give bonus coins for extra effort.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Works Offline</h3>
+                    <p>Everything works without WiFi. Perfect for limiting screen time while still using the app.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>100% Private</h3>
+                    <p>No accounts. No tracking. Offline-first. All data stays on your device. We literally can't see your family's information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free vs Pro Section -->
+    <section class="section section-purple-light">
+        <div class="container">
+            <div class="pricing-header">
+                <h2>Free vs Pro</h2>
+                <p class="pricing-subtitle">Start free. Upgrade when you're ready.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3>Free</h3>
+                        <span>Always free</span>
+                    </div>
+                    <ul class="pricing-list">
+                        <li>Unlimited children</li>
+                        <li>Unlimited chores & rewards</li>
+                        <li>Daily, weekly, weekend schedules</li>
+                        <li>Photo proof</li>
+                        <li>Parent approval workflow</li>
+                        <li>Works offline</li>
+                        <li>No account required</li>
+                    </ul>
+                </div>
+                <div class="pricing-card pro">
+                    <div class="pricing-card-header">
+                        <h3>Pro <span class="badge-pro">Pro</span></h3>
+                        <span>One-time purchase</span>
+                    </div>
+                    <ul class="pricing-list">
+                        <li>Everything in Free, plus:</li>
+                        <li>Custom day schedules (e.g., Mon/Wed/Fri)</li>
+                        <li>Chore deadlines with reminders</li>
+                        <li>Long-term goals (academic, sports, behavioral)</li>
+                        <li>Deduct points for behavior</li>
+                        <li>Missed chore tracking & second chances</li>
+                        <li>Child themes & accessibility modes</li>
+                        <li>Data export</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pricing-cta">
+                <a href="https://apps.apple.com/us/app/choreup-for-families/id6757204140?utm_source=website&utm_medium=pricing" target="_blank" rel="noopener">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                         alt="Download on the App Store"
+                         class="app-store-badge">
+                </a>
+                <p class="pricing-note">Pro is a one-time purchase. No subscriptions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="section section-cream">
+        <div class="container">
+            <div class="screenshots-header">
+                <h2>See ChoreUp in Action</h2>
+            </div>
+            <div class="screenshots-carousel">
+                <div class="screenshot-item">
+                    <div class="placeholder-image placeholder-screenshot">Dashboard</div>
+                    <p class="screenshot-caption">See all your children's progress at a glance</p>
+                </div>
+                <div class="screenshot-item">
+                    <div class="placeholder-image placeholder-screenshot">Chores</div>
+                    <p class="screenshot-caption">Kids know exactly what to do and what they'll earn</p>
+                </div>
+                <div class="screenshot-item">
+                    <div class="placeholder-image placeholder-screenshot">Rewards</div>
+                    <p class="screenshot-caption">Set up rewards that actually motivate your kids</p>
+                </div>
+                <div class="screenshot-item">
+                    <div class="placeholder-image placeholder-screenshot">Goals <span class="badge-pro">Pro</span></div>
+                    <p class="screenshot-caption">Track long-term achievements (Pro)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="faq-header">
+                <h2>Questions Parents Ask</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">Will this mean more screen time for my kids?</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            ChoreUp is designed for quick check-ins, not extended use. Kids mark chores done in seconds—no games, no feeds, no rabbit holes. Most families see less screen time because kids are busy doing chores to earn their rewards.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What if my kid says they did it but didn't?</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            That's what photo proof is for. Require a photo before marking complete, and you approve before points are awarded. Trust, but verify.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do I need to create an account?</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            No. ChoreUp works entirely on your device with no account, no login, and no internet required. Just download and start.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is my family's data safe?</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Completely. All data stays on your iPhone. We don't collect, transmit, or store anything. We literally can't see your family's information.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What ages is this best for?</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            ChoreUp works best for kids ages 4-14. Younger kids love earning Star Coins, while older kids appreciate saving up for bigger rewards.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="section section-cream trust-section">
+        <div class="container-narrow">
+            <h2>Built from Real Family Routines</h2>
+            <p class="trust-body">
+                ChoreUp was designed to reduce arguments and help kids learn independence.
+                No corporate agenda, no data harvesting—just a simple tool for calmer mornings
+                and more helpful kids.
+            </p>
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <span class="trust-badge-icon">🔒</span>
+                    <span>No Account Required</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-badge-icon">📱</span>
+                    <span>Works Offline</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-badge-icon">⏱️</span>
+                    <span>Setup in 2 Minutes</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-badge-icon">👨‍👩‍👧</span>
+                    <span>Made for Families</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section section-gradient final-cta">
+        <div class="container-narrow">
+            <h2>Ready for Calmer Mornings?</h2>
+            <p class="final-cta-subtitle">
+                Download ChoreUp free and see the difference a simple chore system can make.
+            </p>
+            <a href="https://apps.apple.com/us/app/choreup-for-families/id6757204140?utm_source=website&utm_medium=bottom_cta" target="_blank" rel="noopener">
                 <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                      alt="Download on the App Store"
                      class="app-store-badge">
             </a>
-        </section>
+            <p class="final-cta-meta">Requires iOS 17 or later. iPhone only. Free to start.</p>
+        </div>
+    </section>
 
-        <section class="features">
-            <h2>Features</h2>
-            <div class="feature-grid">
-                <div class="feature">
-                    <div class="feature-icon">✅</div>
-                    <h3>Create Chores</h3>
-                    <p>Set up tasks with points, deadlines, and optional photo proof</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">⭐</div>
-                    <h3>Earn Points</h3>
-                    <p>Kids complete chores and earn points for their efforts</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">🎁</div>
-                    <h3>Redeem Rewards</h3>
-                    <p>Create custom rewards that kids can save up for</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Set Goals</h3>
-                    <p>Long-term goals for bigger achievements and rewards</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">📸</div>
-                    <h3>Photo Proof</h3>
-                    <p>Kids can take photos to prove chores are done</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
-                    <h3>Multi-Child</h3>
-                    <p>Support for multiple children with individual profiles</p>
-                </div>
+    <!-- Footer -->
+    <footer class="site-footer section-dark">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="images/app-icon.svg" alt="ChoreUp" width="32" height="32" style="border-radius: 8px;">
+                <span>ChoreUp</span>
             </div>
-        </section>
-
-        <section class="section" id="privacy">
-            <h2>Privacy Policy</h2>
-            <p><strong>Last updated:</strong> December 2025</p>
-            <p>ChoreUp for Families ("the App") is designed with your family's privacy in mind.</p>
-
-            <h3 style="margin-top: 24px; margin-bottom: 12px;">Data Collection</h3>
-            <p>The App stores all data locally on your device. We do not collect, transmit, or store any personal information on external servers.</p>
-
-            <h3 style="margin-top: 24px; margin-bottom: 12px;">Information Stored Locally</h3>
-            <ul>
-                <li>Child profiles (names and avatars)</li>
-                <li>Chores, rewards, and goals you create</li>
-                <li>Points and completion history</li>
-                <li>Photos taken for chore proof (stored only on your device)</li>
-            </ul>
-
-            <h3 style="margin-top: 24px; margin-bottom: 12px;">Camera Usage</h3>
-            <p>The App requests camera access solely to allow children to take photos as proof of chore completion. Photos are stored locally on your device and are never uploaded to any server.</p>
-
-            <h3 style="margin-top: 24px; margin-bottom: 12px;">Notifications</h3>
-            <p>The App may send local notifications to remind parents about pending approvals. No data is sent to external services.</p>
-
-            <h3 style="margin-top: 24px; margin-bottom: 12px;">Third-Party Services</h3>
-            <p>The App does not use any third-party analytics, advertising, or tracking services.</p>
-
-            <h3 style="margin-top: 24px; margin-bottom: 12px;">Children's Privacy</h3>
-            <p>The App is designed for family use. All data remains on the device under parental control. We comply with COPPA (Children's Online Privacy Protection Act) by not collecting any data from children.</p>
-
-            <h3 style="margin-top: 24px; margin-bottom: 12px;">Changes to This Policy</h3>
-            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page.</p>
-        </section>
-
-        <section class="section support" id="support">
-            <h2>Support</h2>
-            <p>Need help or have feedback? We'd love to hear from you!</p>
-            <p style="margin-top: 16px;">
-                <a href="mailto:developer@flexit.net">developer@flexit.net</a>
-            </p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 FLEXIT. All rights reserved.</p>
-        <p style="margin-top: 8px;">
-            <a href="#privacy">Privacy Policy</a>
-        </p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="mailto:support@getchoreup.com">Support</a>
+            </div>
+            <p class="footer-copyright">&copy; 2025 FLEXIT. All rights reserved.</p>
+            <p class="footer-contact">Contact: <a href="mailto:support@getchoreup.com">support@getchoreup.com</a></p>
+        </div>
     </footer>
+
+    <!-- FAQ Accordion Script -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isActive = item.classList.contains('active');
+
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
