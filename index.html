@@ -33,10 +33,10 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/app-icon.png">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Bricolage Grotesque + Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
@@ -47,64 +47,107 @@
         <div class="container header-content">
             <a href="/" class="logo">
                 <span class="logo-icon">
-                    <img src="images/app-icon.png" alt="ChoreUp" width="44" height="44">
+                    <img src="images/app-icon.png" alt="ChoreUp" width="38" height="38">
                 </span>
                 <span>ChoreUp</span>
             </a>
-            <a href="https://apps.apple.com/us/app/choreup-for-families/id6757204140?utm_source=website&utm_medium=header" target="_blank" rel="noopener">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                     alt="Download on the App Store"
-                     class="app-store-badge">
-            </a>
+            <nav class="header-nav">
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="https://apps.apple.com/us/app/choreup-for-families/id6757204140?utm_source=website&utm_medium=header" target="_blank" rel="noopener" class="btn-nav">
+                    Get the App
+                </a>
+            </nav>
         </div>
     </header>
 
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <img src="images/app-icon.png" alt="ChoreUp App Icon" class="hero-icon">
-                    <h1>Chores, <span class="highlight">Without the Daily Nagging</span></h1>
+            <div class="hero-blobs" aria-hidden="true">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+                <div class="blob blob-3"></div>
+            </div>
+            <div class="hero-stars" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="hero-overline">For parents who are done repeating themselves</p>
+                    <h1 class="hero-title">
+                        <span class="word-wrap"><span class="hero-word">End</span></span>
+                        <span class="word-wrap"><span class="hero-word">the</span></span>
+                        <span class="word-wrap"><span class="hero-word">morning</span></span>
+                        <br>
+                        <span class="word-wrap"><span class="hero-word hero-word--em">chore</span></span>
+                        <span class="word-wrap"><span class="hero-word hero-word--em">battles.</span></span>
+                    </h1>
                     <p class="hero-subtitle">
-                        Kids earn Star Coins for tasks you choose. You approve their work.
-                        They redeem rewards you set. Simple system, calmer home.
+                        Kids earn Star Coins for completing chores you set.
+                        You approve their work. They redeem rewards you choose.
+                        Simple system, calmer home.
                     </p>
-                    <div class="hero-badges">
-                        <span class="badge"><span class="badge-icon">✓</span> Free to start</span>
-                        <span class="badge"><span class="badge-icon">🔒</span> No account required</span>
-                        <span class="badge"><span class="badge-icon">👶</span> Best for ages 4-14</span>
-                    </div>
-                    <div class="hero-cta">
-                        <a href="https://apps.apple.com/us/app/choreup-for-families/id6757204140?utm_source=website&utm_medium=hero" target="_blank" rel="noopener">
-                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                                 alt="Download on the App Store"
-                                 class="app-store-badge"
-                                 style="height: 54px;">
+                    <div class="hero-actions">
+                        <a href="https://apps.apple.com/us/app/choreup-for-families/id6757204140?utm_source=website&utm_medium=hero" target="_blank" rel="noopener" class="btn-primary">
+                            Download Free
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
                         </a>
-                        <a href="#how-it-works" class="secondary-link">See How It Works</a>
+                        <a href="#how-it-works" class="btn-ghost">See how it works</a>
+                    </div>
+                </div>
+                <div class="hero-phone">
+                    <div class="phone-mockup">
+                        <img src="images/previews/01-dashboard.png" alt="ChoreUp Dashboard showing family progress">
                     </div>
                 </div>
             </div>
+            <div class="hero-trust">
+                <div class="trust-chip trust-chip--peach">&#10003; Free to start</div>
+                <div class="trust-chip trust-chip--lavender">&#128274; No account needed</div>
+                <div class="trust-chip trust-chip--sky">&#128118; Ages 4&ndash;14</div>
+                <div class="trust-chip trust-chip--mint">&#128244; Works offline</div>
+            </div>
         </section>
 
+        <!-- Marquee -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span>&#9733; Free to start</span>
+                    <span>&#9733; No account needed</span>
+                    <span>&#9733; Ages 4&ndash;14</span>
+                    <span>&#9733; Works offline</span>
+                    <span>&#9733; 100% private</span>
+                    <span>&#9733; Made for families</span>
+                    <span>&#9733; One-time purchase</span>
+                    <span>&#9733; Photo proof</span>
+                </div>
+                <div class="marquee-content">
+                    <span>&#9733; Free to start</span>
+                    <span>&#9733; No account needed</span>
+                    <span>&#9733; Ages 4&ndash;14</span>
+                    <span>&#9733; Works offline</span>
+                    <span>&#9733; 100% private</span>
+                    <span>&#9733; Made for families</span>
+                    <span>&#9733; One-time purchase</span>
+                    <span>&#9733; Photo proof</span>
+                </div>
+            </div>
+        </div>
+
         <!-- Problem Section -->
-        <section class="problem-section">
+        <section class="problem">
             <div class="container">
-                <div class="problem-content">
-                    <h2>Sound Familiar?</h2>
-                    <blockquote class="problem-quote">
-                        "Clean your room." "Did you feed the dog?" "How many times do I have to ask?"
+                <div class="problem-card" data-animate>
+                    <blockquote>
+                        &ldquo;Clean your room.&rdquo; &ldquo;Did you feed the dog?&rdquo; &ldquo;How many times do I have to ask?&rdquo;
                     </blockquote>
-                    <p class="problem-body">
-                        You're not alone. Getting kids to help around the house can feel
-                        like an endless battle of reminders and arguments.
-                    </p>
-                    <p class="problem-solution">ChoreUp turns chores into an earning opportunity kids understand.</p>
-                    <p class="problem-subtext">
-                        The same motivation loops they already enjoy, redirected into
-                        building real-life habits and independence.
-                    </p>
+                </div>
+                <div class="problem-text" data-animate>
+                    <h2>Sound familiar?</h2>
+                    <p>You're not alone. Getting kids to help around the house can feel like an endless loop of reminders and arguments.</p>
+                    <p class="problem-solution">ChoreUp turns chores into an earning opportunity kids actually understand.</p>
+                    <p class="problem-sub">The same motivation loops they already enjoy&mdash;redirected into building real-life habits and independence.</p>
                 </div>
             </div>
         </section>
@@ -112,241 +155,240 @@
         <!-- How It Works Section -->
         <section class="how-it-works" id="how-it-works">
             <div class="container">
-                <div class="section-header">
-                    <h2>Simple for Parents. Fun for Kids.</h2>
-                    <p>Set up in under 2 minutes</p>
+                <div class="section-header" data-animate>
+                    <span class="section-label">How It Works</span>
+                    <h2>Three steps to a<br>calmer home.</h2>
+                    <p class="section-desc">Set up in under 2 minutes</p>
                 </div>
-                <div class="steps-grid">
-                    <div class="step">
-                        <span class="step-number">1</span>
-                        <div class="step-icon">📋</div>
+                <div class="steps">
+                    <div class="step" data-animate>
+                        <div class="step-num"><span>1</span></div>
                         <h3>Create Chores</h3>
                         <p>Add tasks with point values. Set daily, weekly, or weekend schedules. Optionally require photo proof of completion.</p>
                     </div>
-                    <div class="step">
-                        <span class="step-number">2</span>
-                        <div class="step-icon">⭐</div>
+                    <div class="step" data-animate>
+                        <div class="step-num"><span>2</span></div>
                         <h3>Kids Earn Star Coins</h3>
-                        <p>Children mark chores done and watch their balance grow. You review and approve before points are awarded.</p>
+                        <p>Children mark chores done and watch their balance grow. You review and approve before coins are awarded.</p>
                     </div>
-                    <div class="step">
-                        <span class="step-number">3</span>
-                        <div class="step-icon">🎁</div>
+                    <div class="step" data-animate>
+                        <div class="step-num"><span>3</span></div>
                         <h3>Redeem Rewards</h3>
-                        <p>Kids save up and "buy" rewards you define: screen time, treats, activities, toys, whatever motivates your family.</p>
+                        <p>Kids save up and &ldquo;buy&rdquo; rewards you define&mdash;screen time, treats, activities, toys, whatever motivates your family.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Features Section -->
-        <section class="features-section">
+        <section class="features" id="features">
             <div class="container">
-                <div class="section-header">
-                    <h2>Everything You Need to Get Started</h2>
-                    <p>All included free</p>
+                <div class="section-header" data-animate>
+                    <span class="section-label">Features</span>
+                    <h2>Everything you need.<br>All included free.</h2>
                 </div>
                 <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <div class="feature-card feature-card--peach" data-animate>
+                        <div class="feature-emoji">&#128104;&zwj;&#128105;&zwj;&#128103;&zwj;&#128102;</div>
                         <h3>Multiple Children</h3>
-                        <p>Every kid gets their own chores, points balance, and rewards. Works for families of any size.</p>
+                        <p>Every kid gets their own chores, coin balance, and rewards. Works for families of any size.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📅</div>
+                    <div class="feature-card feature-card--lavender" data-animate>
+                        <div class="feature-emoji">&#128197;</div>
                         <h3>Daily & Weekly Schedules</h3>
                         <p>Set chores for every day, weekdays only, weekends only, or specific days of the week.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📸</div>
+                    <div class="feature-card feature-card--sky" data-animate>
+                        <div class="feature-emoji">&#128248;</div>
                         <h3>Photo Proof</h3>
-                        <p>Require kids to snap a photo before marking chores complete. Review the evidence before approving points.</p>
+                        <p>Require kids to snap a photo before marking chores complete. Review the evidence before approving.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">✅</div>
+                    <div class="feature-card feature-card--mint" data-animate>
+                        <div class="feature-emoji">&#9989;</div>
                         <h3>Approval Control</h3>
-                        <p>Review and approve completed chores before points are awarded. Give bonus coins for extra effort.</p>
+                        <p>Review and approve completed chores before coins are awarded. Give bonus coins for extra effort.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📴</div>
+                    <div class="feature-card feature-card--yellow" data-animate>
+                        <div class="feature-emoji">&#128244;</div>
                         <h3>Works Offline</h3>
                         <p>Everything works without WiFi. Perfect for limiting screen time while still using the app.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔒</div>
+                    <div class="feature-card feature-card--pink" data-animate>
+                        <div class="feature-emoji">&#128274;</div>
                         <h3>100% Private</h3>
-                        <p>No accounts. No tracking. Offline-first. All data stays on your device. We literally can't see your family's information.</p>
+                        <p>No accounts. No tracking. All data stays on your device. We literally can't see your family's information.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section -->
-        <section class="pricing-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Free vs Pro</h2>
-                </div>
-                <div class="pricing-grid">
-                    <div class="pricing-card">
-                        <h3>Free</h3>
-                        <p class="pricing-price">Always free</p>
-                        <ul class="pricing-features">
-                            <li><span class="check">✓</span> Unlimited children</li>
-                            <li><span class="check">✓</span> Unlimited chores & rewards</li>
-                            <li><span class="check">✓</span> Daily, weekly, weekend schedules</li>
-                            <li><span class="check">✓</span> Photo proof</li>
-                            <li><span class="check">✓</span> Parent approval workflow</li>
-                            <li><span class="check">✓</span> Works offline</li>
-                            <li><span class="check">✓</span> No account required</li>
-                            <li><span class="check">✓</span> Data export & import</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-card featured">
-                        <span class="pricing-badge">Best Value</span>
-                        <h3>Pro</h3>
-                        <p class="pricing-price">$4.99 one-time purchase</p>
-                        <ul class="pricing-features">
-                            <li><span class="check">✓</span> Everything in Free, plus:</li>
-                            <li><span class="check">✓</span> Custom day schedules (e.g., Mon/Wed/Fri)</li>
-                            <li><span class="check">✓</span> Chore deadlines with reminders</li>
-                            <li><span class="check">✓</span> Long-term goals (academic, sports, behavioral)</li>
-                            <li><span class="check">✓</span> Deduct points for behavior</li>
-                            <li><span class="check">✓</span> Missed chore tracking & second chances</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="pricing-cta">
-                    <a href="https://apps.apple.com/us/app/choreup-for-families/id6757204140?utm_source=website&utm_medium=pricing" target="_blank" rel="noopener">
-                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                             alt="Download on the App Store"
-                             class="app-store-badge">
-                    </a>
-                </div>
-                <p class="pricing-note">Pro is a one-time purchase. No subscriptions.</p>
             </div>
         </section>
 
         <!-- Screenshots Section -->
         <section class="screenshots-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>See ChoreUp in Action</h2>
+            <div class="screenshots-header">
+                <div class="container">
+                    <div class="section-header" data-animate>
+                        <span class="section-label">Preview</span>
+                        <h2>See it in action.</h2>
+                    </div>
                 </div>
-                <div class="screenshots-carousel">
-                    <div class="screenshot-item">
-                        <img src="images/previews/01-dashboard.png" alt="ChoreUp Dashboard - See your whole family's progress">
+            </div>
+            <div class="screenshots-track">
+                <div class="screenshot-card">
+                    <img src="images/previews/01-dashboard.png" alt="ChoreUp Dashboard - See your whole family's progress" loading="lazy">
+                    <span class="screenshot-label">Dashboard</span>
+                </div>
+                <div class="screenshot-card">
+                    <img src="images/previews/02-chores.png" alt="ChoreUp Chores - Daily, weekly, or custom schedules" loading="lazy">
+                    <span class="screenshot-label">Chores</span>
+                </div>
+                <div class="screenshot-card">
+                    <img src="images/previews/03-rewards.png" alt="ChoreUp Rewards - Screen time, treats, toys" loading="lazy">
+                    <span class="screenshot-label">Rewards</span>
+                </div>
+                <div class="screenshot-card">
+                    <img src="images/previews/04-goals.png" alt="ChoreUp Goals - Long-term achievements" loading="lazy">
+                    <span class="screenshot-label">Goals</span>
+                </div>
+                <div class="screenshot-card">
+                    <img src="images/previews/05-childs-view.png" alt="ChoreUp Child View - Kids check in and mark chores done" loading="lazy">
+                    <span class="screenshot-label">Child's View</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <span class="section-label">Pricing</span>
+                    <h2>Free forever.<br>Pro when you're ready.</h2>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card" data-animate>
+                        <div class="pricing-header">
+                            <h3>Free</h3>
+                            <p class="pricing-price">Always free</p>
+                        </div>
+                        <ul class="pricing-list">
+                            <li><span class="pcheck"></span> Unlimited children</li>
+                            <li><span class="pcheck"></span> Unlimited chores & rewards</li>
+                            <li><span class="pcheck"></span> Daily, weekly, weekend schedules</li>
+                            <li><span class="pcheck"></span> Photo proof</li>
+                            <li><span class="pcheck"></span> Parent approval workflow</li>
+                            <li><span class="pcheck"></span> Works offline</li>
+                            <li><span class="pcheck"></span> No account required</li>
+                            <li><span class="pcheck"></span> Data export & import</li>
+                        </ul>
                     </div>
-                    <div class="screenshot-item">
-                        <img src="images/previews/02-chores.png" alt="ChoreUp Chores - Daily, weekly, or custom schedules">
+                    <div class="pricing-card pricing-card--pro" data-animate>
+                        <div class="pricing-badge">Best Value</div>
+                        <div class="pricing-header">
+                            <h3>Pro</h3>
+                            <p class="pricing-price"><strong>$4.99</strong> one-time</p>
+                        </div>
+                        <ul class="pricing-list">
+                            <li class="pricing-divider">Everything in Free, plus:</li>
+                            <li><span class="pcheck pcheck--coral"></span> Custom day schedules (e.g., Mon/Wed/Fri)</li>
+                            <li><span class="pcheck pcheck--coral"></span> Chore deadlines with reminders</li>
+                            <li><span class="pcheck pcheck--coral"></span> Long-term goals (academic, sports, behavioral)</li>
+                            <li><span class="pcheck pcheck--coral"></span> Deduct points for behavior</li>
+                            <li><span class="pcheck pcheck--coral"></span> Missed chore tracking & second chances</li>
+                        </ul>
                     </div>
-                    <div class="screenshot-item">
-                        <img src="images/previews/03-rewards.png" alt="ChoreUp Rewards - Screen time, treats, toys">
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="images/previews/04-goals.png" alt="ChoreUp Goals - Long-term achievements">
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="images/previews/05-childs-view.png" alt="ChoreUp Child View - Kids check in and mark chores done">
-                    </div>
+                </div>
+                <div class="pricing-footer" data-animate>
+                    <a href="https://apps.apple.com/us/app/choreup-for-families/id6757204140?utm_source=website&utm_medium=pricing" target="_blank" rel="noopener" class="btn-primary">
+                        Download Free
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+                    </a>
+                    <p class="pricing-note">Pro is a one-time purchase. No subscriptions. Ever.</p>
                 </div>
             </div>
         </section>
 
         <!-- FAQ Section -->
-        <section class="faq-section">
+        <section class="faq">
             <div class="container">
-                <div class="section-header">
-                    <h2>Questions Parents Ask</h2>
+                <div class="section-header" data-animate>
+                    <span class="section-label">FAQ</span>
+                    <h2>Questions parents ask.</h2>
                 </div>
-                <div class="faq-list">
+                <div class="faq-list" data-animate>
                     <div class="faq-item">
-                        <button class="faq-question">Will this mean more screen time for my kids?</button>
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Will this mean more screen time for my kids?</span>
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
                         <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                ChoreUp is designed for quick check-ins, not extended use. Kids mark chores done in seconds, no games, no feeds, no rabbit holes. Most families see less screen time because kids are busy doing chores to earn their rewards.
+                            <div class="faq-answer-inner">
+                                ChoreUp is designed for quick check-ins, not extended use. Kids mark chores done in seconds&mdash;no games, no feeds, no rabbit holes. Most families see less screen time because kids are busy doing chores to earn their rewards.
                             </div>
                         </div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">What if my kid says they did it but didn't?</button>
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What if my kid says they did it but didn't?</span>
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
                         <div class="faq-answer">
-                            <div class="faq-answer-content">
+                            <div class="faq-answer-inner">
                                 That's what photo proof is for. Require a photo before marking complete, and you approve before points are awarded. Trust, but verify.
                             </div>
                         </div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">Do I need to create an account?</button>
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Do I need to create an account?</span>
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
                         <div class="faq-answer">
-                            <div class="faq-answer-content">
+                            <div class="faq-answer-inner">
                                 No. ChoreUp works entirely on your device with no account, no login, and no internet required. Just download and start.
                             </div>
                         </div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">Is my family's data safe?</button>
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Is my family's data safe?</span>
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
                         <div class="faq-answer">
-                            <div class="faq-answer-content">
+                            <div class="faq-answer-inner">
                                 Completely. All data stays on your iPhone. We don't collect, transmit, or store anything. We literally can't see your family's information.
                             </div>
                         </div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">What ages is this best for?</button>
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What ages is this best for?</span>
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
                         <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                ChoreUp works best for kids ages 4-14. Younger kids love earning Star Coins, while older kids appreciate saving up for bigger rewards.
+                            <div class="faq-answer-inner">
+                                ChoreUp works best for kids ages 4&ndash;14. Younger kids love earning Star Coins, while older kids appreciate saving up for bigger rewards.
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Trust Section -->
-        <section class="trust-section">
-            <div class="container-narrow">
-                <h2>Built from Real Family Routines</h2>
-                <p class="trust-body">
-                    ChoreUp was designed to reduce arguments and help kids learn independence.
-                    No corporate agenda, no data harvesting, just a simple tool for calmer mornings
-                    and more helpful kids.
-                </p>
-                <div class="trust-badges">
-                    <div class="trust-badge">
-                        <span class="trust-badge-icon">🔒</span>
-                        <span>No Account Required</span>
-                    </div>
-                    <div class="trust-badge">
-                        <span class="trust-badge-icon">📱</span>
-                        <span>Works Offline</span>
-                    </div>
-                    <div class="trust-badge">
-                        <span class="trust-badge-icon">⏱️</span>
-                        <span>Setup in 2 Minutes</span>
-                    </div>
-                    <div class="trust-badge">
-                        <span class="trust-badge-icon">👨‍👩‍👧</span>
-                        <span>Made for Families</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Final CTA Section -->
-        <section class="final-cta">
-            <div class="container-narrow">
-                <h2>Ready for Calmer Mornings?</h2>
-                <p class="final-cta-subtitle">
-                    Download ChoreUp free and see the difference a simple chore system can make.
-                </p>
-                <a href="https://apps.apple.com/us/app/choreup-for-families/id6757204140?utm_source=website&utm_medium=bottom_cta" target="_blank" rel="noopener">
-                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                         alt="Download on the App Store"
-                         class="app-store-badge">
-                </a>
-                <p class="final-cta-meta">Requires iOS 17 or later. iPhone only. Free to start.</p>
+        <section class="cta-final">
+            <div class="cta-blobs" aria-hidden="true">
+                <div class="blob blob-cta-1"></div>
+                <div class="blob blob-cta-2"></div>
+            </div>
+            <div class="container">
+                <div class="cta-final-content" data-animate>
+                    <h2>Ready for calmer mornings?</h2>
+                    <p>Download ChoreUp free and see the difference a simple chore system makes.</p>
+                    <a href="https://apps.apple.com/us/app/choreup-for-families/id6757204140?utm_source=website&utm_medium=bottom_cta" target="_blank" rel="noopener" class="btn-primary btn-primary--white">
+                        Download Free
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+                    </a>
+                    <span class="cta-meta">Requires iOS 17 or later &middot; iPhone only &middot; Free to start</span>
+                </div>
             </div>
         </section>
     </main>
@@ -354,93 +396,305 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <div class="footer-logo">
-                <img src="images/app-icon.png" alt="ChoreUp" width="32" height="32">
-                <span>ChoreUp</span>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/app-icon.png" alt="ChoreUp" width="32" height="32">
+                        <span>ChoreUp</span>
+                    </div>
+                    <p class="footer-tagline">Chores without the nagging.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="feedback.html">Feedback</a>
+                    <a href="mailto:support@getchoreup.com">Support</a>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="feedback.html">Feedback</a>
-                <a href="mailto:support@getchoreup.com">Support</a>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ChoreUp. Made with care for busy families.</p>
+                <p><a href="mailto:support@getchoreup.com">support@getchoreup.com</a></p>
             </div>
-            <p class="footer-copyright">Made with ❤️ for busy families.</p>
-            <p class="footer-contact">Contact: <a href="mailto:support@getchoreup.com">support@getchoreup.com</a></p>
         </div>
     </footer>
 
+    <!-- Screenshot Lightbox -->
     <div class="screenshot-lightbox" id="screenshot-lightbox" aria-hidden="true">
         <div class="screenshot-lightbox-inner" role="dialog" aria-modal="true" aria-label="Screenshot preview" tabindex="-1">
+            <button class="lightbox-close" aria-label="Close preview">&times;</button>
             <img src="" alt="" id="screenshot-lightbox-img">
             <p class="screenshot-lightbox-caption" id="screenshot-lightbox-caption"></p>
         </div>
     </div>
 
-    <!-- FAQ Accordion Script -->
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
     <script>
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', () => {
-                const item = button.parentElement;
-                const isActive = item.classList.contains('active');
+    /* =========================================================================
+       GSAP Animations — ChoreUp
+       ========================================================================= */
+    gsap.registerPlugin(ScrollTrigger);
 
-                // Close all other items
-                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+    /* ── 1. Hero Entrance Timeline ── */
+    const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-                // Toggle current item
-                if (!isActive) {
-                    item.classList.add('active');
-                }
+    // Set initial states
+    gsap.set('.hero-word', { y: '110%' });
+    gsap.set('.hero-overline', { y: 30, opacity: 0 });
+    gsap.set('.hero-subtitle', { y: 30, opacity: 0 });
+    gsap.set('.hero-actions', { y: 30, opacity: 0 });
+    gsap.set('.hero-phone', { y: 60, opacity: 0, rotate: 3 });
+    gsap.set('.hero-trust .trust-chip', { y: 20, opacity: 0, scale: 0.9 });
+    gsap.set('.blob', { scale: 0.5, opacity: 0 });
+
+    heroTl
+        .to('.blob', { scale: 1, opacity: 1, duration: 1.2, stagger: 0.15, ease: 'power2.out' }, 0)
+        .to('.hero-overline', { y: 0, opacity: 1, duration: 0.6 }, 0.1)
+        .to('.hero-word', { y: '0%', stagger: 0.06, duration: 0.7, ease: 'back.out(1.7)' }, 0.2)
+        .to('.hero-subtitle', { y: 0, opacity: 1, duration: 0.6 }, 0.65)
+        .to('.hero-actions', { y: 0, opacity: 1, duration: 0.5 }, 0.8)
+        .to('.hero-phone', { y: 0, opacity: 1, rotate: 0, duration: 0.9, ease: 'back.out(1.4)' }, 0.4)
+        .to('.hero-trust .trust-chip', {
+            y: 0, opacity: 1, scale: 1,
+            stagger: 0.06, duration: 0.4, ease: 'back.out(2.5)'
+        }, 0.95);
+
+    /* ── 2. Floating Blobs (continuous) ── */
+    gsap.to('.blob-1', { x: 40, y: -50, duration: 9, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+    gsap.to('.blob-2', { x: -35, y: 40, duration: 11, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+    gsap.to('.blob-3', { x: 25, y: 30, duration: 7, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+    gsap.to('.blob-cta-1', { x: 30, y: -30, duration: 8, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+    gsap.to('.blob-cta-2', { x: -25, y: 20, duration: 10, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+
+    /* ── 3. Floating Stars in Hero ── */
+    (function createStars() {
+        const container = document.querySelector('.hero-stars');
+        if (!container) return;
+        for (let i = 0; i < 14; i++) {
+            const star = document.createElement('div');
+            star.className = 'floating-star';
+            const size = 8 + Math.random() * 14;
+            star.style.cssText = `
+                left: ${Math.random() * 100}%;
+                top: ${Math.random() * 100}%;
+                width: ${size}px;
+                height: ${size}px;
+                opacity: ${0.15 + Math.random() * 0.3};
+            `;
+            container.appendChild(star);
+
+            gsap.to(star, {
+                y: -25 + Math.random() * 50,
+                x: -15 + Math.random() * 30,
+                rotation: 180 + Math.random() * 360,
+                duration: 5 + Math.random() * 7,
+                repeat: -1,
+                yoyo: true,
+                ease: 'sine.inOut',
+                delay: Math.random() * 4
             });
+        }
+    })();
+
+    /* ── 4. Phone Hover Float ── */
+    gsap.to('.phone-mockup', {
+        y: -12,
+        duration: 2.5,
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut'
+    });
+
+    /* ── 5. ScrollTrigger — Section Reveals ── */
+
+    // Problem section
+    gsap.from('.problem-card', {
+        y: 40, opacity: 0, rotate: 2,
+        duration: 0.7, ease: 'back.out(1.4)',
+        scrollTrigger: { trigger: '.problem', start: 'top 75%' }
+    });
+    gsap.from('.problem-text', {
+        y: 40, opacity: 0,
+        duration: 0.7, ease: 'power3.out', delay: 0.2,
+        scrollTrigger: { trigger: '.problem', start: 'top 75%' }
+    });
+
+    // Section headers
+    gsap.utils.toArray('.section-header[data-animate]').forEach(header => {
+        gsap.from(header.children, {
+            y: 30, opacity: 0,
+            stagger: 0.08, duration: 0.6, ease: 'power3.out',
+            scrollTrigger: { trigger: header, start: 'top 80%' }
         });
+    });
 
-        const screenshots = document.querySelectorAll('.screenshot-item img');
-        const lightbox = document.getElementById('screenshot-lightbox');
-        const lightboxInner = document.querySelector('.screenshot-lightbox-inner');
-        const lightboxImg = document.getElementById('screenshot-lightbox-img');
-        const lightboxCaption = document.getElementById('screenshot-lightbox-caption');
-        let lastFocusedElement = null;
+    // Step cards
+    gsap.utils.toArray('.step[data-animate]').forEach((step, i) => {
+        gsap.from(step, {
+            y: 50, opacity: 0, scale: 0.95,
+            duration: 0.6, ease: 'back.out(1.5)',
+            delay: i * 0.12,
+            scrollTrigger: { trigger: step, start: 'top 85%' }
+        });
+    });
 
-        const closeLightbox = () => {
-            if (!lightbox) return;
-            lightbox.classList.remove('active');
-            lightbox.setAttribute('aria-hidden', 'true');
-            lightboxImg.src = '';
-            lightboxImg.alt = '';
-            lightboxCaption.textContent = '';
-            document.body.style.overflow = '';
-            if (lastFocusedElement) {
-                lastFocusedElement.focus();
-                lastFocusedElement = null;
-            }
-        };
+    // Feature cards (individual triggers)
+    gsap.utils.toArray('.feature-card[data-animate]').forEach((card, i) => {
+        gsap.from(card, {
+            y: 50, opacity: 0, scale: 0.92,
+            duration: 0.55, ease: 'back.out(1.6)',
+            delay: i * 0.08,
+            scrollTrigger: { trigger: card, start: 'top 90%' }
+        });
+    });
 
-        if (screenshots.length && lightbox && lightboxInner && lightboxImg && lightboxCaption) {
-            const openLightbox = (img) => {
-                lastFocusedElement = document.activeElement;
-                lightboxImg.src = img.src;
-                lightboxImg.alt = img.alt;
-                lightboxCaption.textContent = img.alt;
-                lightbox.classList.add('active');
-                lightbox.setAttribute('aria-hidden', 'false');
-                document.body.style.overflow = 'hidden';
-                lightboxInner.focus();
-            };
+    // Pricing cards
+    gsap.utils.toArray('.pricing-card[data-animate]').forEach((card, i) => {
+        gsap.from(card, {
+            y: 50, opacity: 0, scale: 0.93,
+            duration: 0.6, ease: 'back.out(1.5)',
+            delay: i * 0.15,
+            scrollTrigger: { trigger: card, start: 'top 85%' }
+        });
+    });
 
-            screenshots.forEach(img => {
-                img.addEventListener('click', () => openLightbox(img));
-            });
+    // FAQ items
+    gsap.from('.faq-item', {
+        y: 30, opacity: 0,
+        stagger: 0.08, duration: 0.5, ease: 'power3.out',
+        scrollTrigger: { trigger: '.faq-list', start: 'top 80%' }
+    });
 
-            lightbox.addEventListener('click', (event) => {
-                if (event.target === lightbox) {
-                    closeLightbox();
-                }
-            });
+    // CTA final
+    gsap.from('.cta-final-content', {
+        y: 40, opacity: 0, scale: 0.97,
+        duration: 0.7, ease: 'power3.out',
+        scrollTrigger: { trigger: '.cta-final', start: 'top 75%' }
+    });
 
-            document.addEventListener('keydown', (event) => {
-                if (event.key === 'Escape' && lightbox.classList.contains('active')) {
-                    closeLightbox();
+    // Pricing footer
+    gsap.from('.pricing-footer[data-animate]', {
+        y: 20, opacity: 0,
+        duration: 0.5, ease: 'power3.out',
+        scrollTrigger: { trigger: '.pricing-footer', start: 'top 90%' }
+    });
+
+    /* ── 6. Screenshots — Pinned Horizontal Scroll (Desktop) ── */
+    ScrollTrigger.matchMedia({
+        '(min-width: 768px)': function () {
+            const track = document.querySelector('.screenshots-track');
+            const section = document.querySelector('.screenshots-section');
+            if (!track || !section) return;
+
+            const getDistance = () => track.scrollWidth - section.offsetWidth;
+
+            gsap.to(track, {
+                x: () => -getDistance(),
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top top',
+                    end: () => '+=' + getDistance(),
+                    pin: true,
+                    scrub: 0.6,
+                    invalidateOnRefresh: true,
+                    anticipatePin: 1
                 }
             });
         }
+    });
+
+    /* ── 7. FAQ Accordion (GSAP-powered) ── */
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const btn = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        gsap.set(answer, { height: 0, overflow: 'hidden' });
+
+        btn.addEventListener('click', () => {
+            const isOpen = item.classList.contains('active');
+
+            faqItems.forEach(other => {
+                if (other !== item && other.classList.contains('active')) {
+                    other.classList.remove('active');
+                    other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                    gsap.to(other.querySelector('.faq-answer'), {
+                        height: 0, duration: 0.3, ease: 'power2.inOut'
+                    });
+                }
+            });
+
+            if (isOpen) {
+                item.classList.remove('active');
+                btn.setAttribute('aria-expanded', 'false');
+                gsap.to(answer, { height: 0, duration: 0.3, ease: 'power2.inOut' });
+            } else {
+                item.classList.add('active');
+                btn.setAttribute('aria-expanded', 'true');
+                gsap.to(answer, { height: 'auto', duration: 0.4, ease: 'power2.out' });
+            }
+        });
+    });
+
+    /* ── 8. Screenshot Lightbox ── */
+    const lbScreenshots = document.querySelectorAll('.screenshot-card img');
+    const lb = document.getElementById('screenshot-lightbox');
+    const lbInner = document.querySelector('.screenshot-lightbox-inner');
+    const lbImg = document.getElementById('screenshot-lightbox-img');
+    const lbCaption = document.getElementById('screenshot-lightbox-caption');
+    const lbClose = document.querySelector('.lightbox-close');
+    let lastFocus = null;
+
+    function closeLightbox() {
+        if (!lb) return;
+        gsap.to(lbInner, { scale: 0.92, opacity: 0, duration: 0.2, ease: 'power2.in' });
+        gsap.to(lb, {
+            opacity: 0, duration: 0.25,
+            onComplete: () => {
+                lb.classList.remove('active');
+                lb.setAttribute('aria-hidden', 'true');
+                lbImg.src = ''; lbImg.alt = ''; lbCaption.textContent = '';
+                document.body.style.overflow = '';
+                if (lastFocus) { lastFocus.focus(); lastFocus = null; }
+            }
+        });
+    }
+
+    if (lbScreenshots.length && lb && lbImg) {
+        lbScreenshots.forEach(img => {
+            img.addEventListener('click', () => {
+                lastFocus = document.activeElement;
+                lbImg.src = img.src;
+                lbImg.alt = img.alt;
+                lbCaption.textContent = img.alt;
+                lb.classList.add('active');
+                lb.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+                gsap.fromTo(lb, { opacity: 0 }, { opacity: 1, duration: 0.25 });
+                gsap.fromTo(lbInner, { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: 'back.out(1.4)' });
+                lbInner.focus();
+            });
+        });
+
+        lb.addEventListener('click', e => { if (e.target === lb) closeLightbox(); });
+        if (lbClose) lbClose.addEventListener('click', closeLightbox);
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && lb.classList.contains('active')) closeLightbox();
+        });
+    }
+
+    /* ── 9. Smooth Anchor Scrolling ── */
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', e => {
+            const target = document.querySelector(link.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
     </script>
 </body>
 </html>

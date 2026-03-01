@@ -21,10 +21,10 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/app-icon.png">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Bricolage Grotesque + Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
@@ -35,15 +35,17 @@
         <div class="container header-content">
             <a href="/" class="logo">
                 <span class="logo-icon">
-                    <img src="images/app-icon.png" alt="ChoreUp" width="44" height="44">
+                    <img src="images/app-icon.png" alt="ChoreUp" width="40" height="40">
                 </span>
                 <span>ChoreUp</span>
             </a>
-            <a href="https://apps.apple.com/us/app/choreup-for-families/id6757204140?utm_source=website&utm_medium=header" target="_blank" rel="noopener">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                     alt="Download on the App Store"
-                     class="app-store-badge">
-            </a>
+            <nav class="header-nav">
+                <a href="/" class="nav-link">Home</a>
+                <a href="https://apps.apple.com/us/app/choreup-for-families/id6757204140?utm_source=website&utm_medium=header" target="_blank" rel="noopener" class="btn-download-sm">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M11.2 8.4c0-1.7 1.4-2.5 1.5-2.6-.8-1.2-2.1-1.3-2.5-1.4-1.1-.1-2.1.6-2.6.6s-1.4-.6-2.3-.6C3.9 4.4 2.6 5.5 2.6 8.5c0 1 .4 2 .8 2.7.4.6.8 1.2 1.4 1.2s.8-.4 1.5-.4.9.4 1.5.4 1-.5 1.4-1.2c.4-.7.6-1.4.6-1.4-.1-.1-1.6-.5-1.6-2.4zM9.7 3.5c.3-.4.6-1 .5-1.5-.5 0-1.1.3-1.5.7-.3.4-.6.9-.5 1.5.5 0 1.1-.3 1.5-.7z" fill="currentColor"/></svg>
+                    Download
+                </a>
+            </nav>
         </div>
     </header>
 
@@ -51,7 +53,7 @@
     <section class="feedback-hero">
         <div class="container-narrow">
             <div class="feedback-icon">💬</div>
-            <h1>Help Shape <span class="highlight">ChoreUp</span></h1>
+            <h1>Help Shape ChoreUp</h1>
             <p class="feedback-subtitle">
                 You're one of our first families, and your experience matters to us.
                 Tell us what's working, what's not, and what you wish ChoreUp could do.
@@ -111,17 +113,24 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <div class="footer-logo">
-                <img src="images/app-icon.png" alt="ChoreUp" width="32" height="32">
-                <span>ChoreUp</span>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/app-icon.png" alt="ChoreUp" width="32" height="32">
+                        <span>ChoreUp</span>
+                    </div>
+                    <p class="footer-tagline">Chores without the nagging.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="feedback.html">Feedback</a>
+                    <a href="mailto:support@getchoreup.com">Support</a>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="feedback.html">Feedback</a>
-                <a href="mailto:support@getchoreup.com">Support</a>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2025 ChoreUp. Made with care for busy families.</p>
+                <p class="footer-contact"><a href="mailto:support@getchoreup.com">support@getchoreup.com</a></p>
             </div>
-            <p class="footer-copyright">Made with ❤️ for busy families.</p>
-            <p class="footer-contact">Contact: <a href="mailto:support@getchoreup.com">support@getchoreup.com</a></p>
         </div>
     </footer>
 </body>
